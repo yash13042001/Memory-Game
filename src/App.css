@@ -2,37 +2,45 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 300px; 
 }
 
-.App-link {
-  color: #61dafb;
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  height: 30px;
+  width: 30px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.show{
+  font-size: 30px;
+}
+
+.hide{
+  font-size: 0px;
+}
+
+.remove{
+  visibility: hidden;
+}
+
+button{
+  width: 140px;
+  height: 40px;
+  background-color: chartreuse;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 20px;
+
 }
